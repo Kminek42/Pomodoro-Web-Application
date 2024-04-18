@@ -6,22 +6,44 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Pomodoro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap">
 </head>
 
 <body>
-    <h1>Pomodoro</h1>
-    <p>Lesson time [min]</p>
-    <input type="number" id="lessonTime", min="5", max="60", step="5"><br>
-    <p>Break time [min]</p>
-    <input type="number" id="breakTime", min="5", max="15", step="5"><br>
-    <p>Long break time [min]</p>
-    <input type="number" id="longBreakTime", min="5", max="30", step="5"><br>
-    <button id="startButton">Start</button>
-    <button id="resetButton">Reset</button>
-    <p id="roundCounter">Round 1</p>
-    <p id="state">Lesson</p>
-    <p id="remainingTime">Remaining time: 25:00</p>
+    <div style="width: fit-content; margin: auto;">
+        <div class="widget">
+            <h1>Pomodoro Timer</h1>
+        </div>
 
+        <div class="widget col">
+            <p id="roundCounter">Round 1</p>
+            <p id="state">Lesson</p>
+            <p id="remainingTime">Remaining time: 25:00</p>
+            <button id="startButton">Start</button>
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <div class="widget col">
+            <p>Lesson time:</p>
+            <div class="timeSetter">
+                <input type="number" id="lessonTime", min="5", max="60", step="5">
+                <p>minutes</p>
+            </div>
+
+            <p>Break time:</p>
+            <div class="timeSetter">
+                <input type="number" id="breakTime", min="5", max="15", step="5">
+                <p>minutes</p>
+            </div>
+
+            <p>Long break time:</p>
+            <div class="timeSetter">
+                <input type="number" id="longBreakTime", min="5", max="30", step="5">
+                <p>minutes</p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
