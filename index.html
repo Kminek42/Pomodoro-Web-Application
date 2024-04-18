@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pomodoro</h1>
+    <p>Lesson time [min]</p>
+    <input type="number" id="lessonTime", min="5", max="60", step="5"><br>
+    <p>Break time [min]</p>
+    <input type="number" id="breakTime", min="5", max="15", step="5"><br>
+    <p>Long break time [min]</p>
+    <input type="number" id="longBreakTime", min="5", max="30", step="5"><br>
+    <button id="startButton">Start</button>
+    <button id="resetButton">Reset</button>
+    <p id="roundCounter">Round 1</p>
+    <p id="state">Lesson</p>
+    <p id="remainingTime">Remaining time: 25:00</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

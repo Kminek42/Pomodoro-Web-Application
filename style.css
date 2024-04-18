@@ -1,0 +1,6 @@
+html,
+body {
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(255, 156, 120, 1.0), rgb(199, 131, 95));
+    height: 100vh;
+}
