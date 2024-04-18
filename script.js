@@ -106,4 +106,4 @@ remainingTimeField.textContent = 'Remaining time: ' + sec2min(localStorage.getIt
 
 var isCounting = false;
 
-setInterval(tick, 1);
+setInterval(tick, 1000);
