@@ -4,3 +4,5 @@
 
 User can change duration of each phase by using arrows.
 The application remembers its state on the local computer, so it is immune to browser shutdown and page refresh.
+
+Background is AI generated.
