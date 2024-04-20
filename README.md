@@ -7,3 +7,5 @@ The application remembers its state on the local computer, so it is immune to br
 
 Made using vanilla HTML, CSS and JS.
 Background is AI generated.
+
+Next thing I want to add is an alarm sound.
