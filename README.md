@@ -1,4 +1,4 @@
-<h1>Simple but quite pretty pomodoro app</h1>
+<h1>Simple pomodoro app written in JS</h1>
 
 <img height="512" alt="image" src="https://github.com/Kminek42/Pomodoro-Web-Application/assets/51884463/90970684-1380-4c9c-af76-65806df64c05">
 
