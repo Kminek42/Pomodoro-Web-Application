@@ -42,6 +42,7 @@ function tick() {
         localStorage.setItem('remainingTime', timeRemaining);
         remainingTimeField.textContent = 'Remaining time: ' + sec2min(timeRemaining);
         if (timeRemaining <= 0) {
+            audio.play()
             if (stateField.textContent == 'Lesson') {
                 console.log(localStorage.getItem('round'))
                 if (localStorage.getItem('round') % 4 == 0) {
@@ -76,6 +77,11 @@ if (localStorage.length == 0) {
     localStorage.setItem('remainingTime', 25*60);
     localStorage.setItem('round', 1);
 }
+
+// get audio
+let audio = document.createElement('audio');
+audio.src = 'alarm.wav'
+console.log(audio);
 
 // get components from html and add event handlers
 var lessonTimeField = document.getElementById('lessonTime');
